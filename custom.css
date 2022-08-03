@@ -191,6 +191,7 @@ button.pri{
   background-color: #FF5200;
   color: #fff;
   border: 1px solid #FF5200;
+  border-radius: 50px;
 }
 
 button.pri:hover {
