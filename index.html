@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Travelsy - Home</title>
+
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+
+    <!-- Custom styles -->
+    <link href="custom.css" rel="stylesheet">
+  </head>
+  <body>
+
+<main>
+  <div class="container" id="Nav">
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Travelsy</a>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+        
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 link-secondary">Camping locations</a></li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 link-dark">Activities</a></li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 link-dark">Equipment</a></li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 link-dark">Blogs</a></li>
+        <li class="nav-item hide-lg">
+          <button class="nav-link btn pri reserve-btn"><i class="fa fa-bookmark-o" aria-hidden="true"></i> Reservation</button>
+        </li>
+      </ul>  
+    </div>
+
+    <button class="btn pri reserve-btn hide-sm"><i class="fa fa-bookmark-o" aria-hidden="true"></i> Reservation</button>
+
+      <form class="d-flex search">
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+        <button class="btn" type="submit">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </form>
+
+      <div class="dropdown profile">
+        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="assets/brand/avatar.png" alt="user avatar" width="32" height="32" class="rounded-circle">
+        </a>
+        <ul class="dropdown-menu text-small">
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Sign out</a></li>
+        </ul>
+      </div>
+  </div>
+</nav>
+
+    <!-- <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark ">Travelsy</a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-secondary">Camping locations</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Activities</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Equipment</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Blogs</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <button class="btn pri"><i class="fa fa-bookmark-o" aria-hidden="true"></i> Reservation</button>
+        <div class="dropdown">
+          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="assets/brand/avatar.png" alt="user avatar" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small">
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </header> -->
+  </div>
+
+  <div class="container py-4 banner">
+    <div class="row">
+      <div class="col-md-6 p-2 mb-4 rounded-3">
+        <h1 class="display-5 fw-bold">Find an experience</h1>
+        <p class="fs-4">To find you the best experience, we will ask you a questions to and show you experieces based on your preferences</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="section_padding">
+    <div class="container py-4 form-selection">
+      <form class="needs-validation" novalidate>
+        <div class="time mb-5">
+          <h5>How much time do you have?</h5>
+          <div class="row">
+            <div class="col-md-12 time-col">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="weekend-chk">
+                <label class="form-check-label" for="weekend-chk">A weekend </label>
+              </div>
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="week-chk">
+                <label class="form-check-label" for="week-chk">A week </label>
+              </div>
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="month-chk">
+                <label class="form-check-label" for="month-chk">A month </label>
+              </div>
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="few-days-chk">
+                <label class="form-check-label" for="few-days-chk">A few days, specify </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="interest">
+          <h5>What are your interests?</h5>
+          <div class="row interest-col">
+            <div class="col-md-8 col-6 form-check">
+              <input type="checkbox" class="form-check-input" id="rafting">
+              <label class="form-check-label" for="rafting"><img src="assets/brand/Rectangle.png" alt="Rafting image"> </label>
+              <h5 class="title">Rafting</h5>
+            </div>
+            <div class="col-md-4 col-6 form-check">
+              <input type="checkbox" class="form-check-input" id="nature">
+              <label class="form-check-label" for="nature"><img src="assets/brand/nature.jpg" alt="Nature image"> </label>
+              <h5 class="title">Nature walk</h5>
+            </div>
+          
+
+            <div class="col-md-4 col-6 form-check">
+              <input type="checkbox" class="form-check-input" id="biking">
+              <label class="form-check-label" for="biking"><img src="assets/brand/biking.png" alt="Biking image"> </label>
+              <h5 class="title">Bike riding</h5>
+            </div>
+            <div class="col-md-4 col-6 form-check">
+              <input type="checkbox" class="form-check-input" id="jumping">
+              <label class="form-check-label" for="jumping"><img src="assets/brand/jumping.png" alt="Jumping image"> </label>
+              <h5 class="title">Bungee jumping</h5>
+            </div>
+            <div class="col-md-4 col-6 form-check">
+              <input type="checkbox" class="form-check-input" id="wine">
+              <label class="form-check-label" for="wine"><img src="assets/brand/wine.png" alt="Wine image"> </label>
+              <h5 class="title">Wine tasting</h5>
+            </div>
+
+            <div class="col-md-4 col-6 form-check">
+              <input type="checkbox" class="form-check-input" id="coffee">
+              <label class="form-check-label" for="coffee"><img src="assets/brand/coffee.png" alt="Coffee image"> </label>
+              <h5 class="title">Coffee Tasting</h5>
+            </div>
+            <div class="col-md-8 col-6 form-check">
+              <input type="checkbox" class="form-check-input" id="farm">
+              <label class="form-check-label" for="farm"><img src="assets/brand/hill.jpg" alt="Farm image"> </label>
+              <h5 class="title">Farm visit</h5>
+            </div>
+
+            <div class="col-md-8 col-6 form-check">
+              <input type="checkbox" class="form-check-input" id="camping">
+              <label class="form-check-label" for="camping"><img src="assets/brand/camp.jpg" alt="camping image"> </label>
+              <h5 class="title">Camping</h5>
+            </div>
+            <div class="col-md-4 col-6 form-check">
+              <input type="checkbox" class="form-check-input" id="tour">
+              <label class="form-check-label" for="tour"><img src="assets/brand/tour.png" alt="Tour image"> </label>
+              <h5 class="title">Kibera Tour</h5>
+            </div>
+          </div>
+
+          <div class="col-md-12 set-btn">
+            <button class="btn pri">Set</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section id="testimonial-area" class="section_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="testmonial-title">
+            <h6>Testimonial</h6>
+            <h3>What <br> customers <br><span>says about us</span></h3>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="testmonial-slider-area text-center owl-carousel">
+            <div class="box-area">  
+              <span>Designation Goes Here</span>                  
+              <p class="content">
+                Lorem Ipsum is simply dummy text of the printing and 
+                typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+                ever since
+              </p>
+              <div class="img-area">
+                <img src="assets/brand/customers/1.jpg" alt="">
+                <h5>Person's name</h5>
+              </div>  
+            </div>
+            <div class="box-area">  
+              <span>Designation Goes Here</span>                  
+              <p class="content">
+                Lorem Ipsum is simply dummy text of the printing and 
+                typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+                ever since
+              </p>
+              <div class="img-area">
+                <img src="assets/brand/customers/1.jpg" alt="">
+                <h5>Person's name</h5>
+              </div>  
+            </div>
+            <div class="box-area">  
+              <span>Designation Goes Here</span>                  
+              <p class="content">
+                Lorem Ipsum is simply dummy text of the printing and 
+                typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+                ever since
+              </p>
+              <div class="img-area">
+                <img src="assets/brand/customers/1.jpg" alt="">
+                <h5>Person's name</h5>
+              </div>  
+            </div>
+            <div class="box-area">  
+              <span>Designation Goes Here</span>                  
+              <p class="content">
+                Lorem Ipsum is simply dummy text of the printing and 
+                typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+                ever since
+              </p>
+              <div class="img-area">
+                <img src="assets/brand/customers/1.jpg" alt="">
+                <h5>Person's name</h5>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section_padding">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="about">
+              <h4>Need travelsy help?</h4>
+              <ul>
+                <li>Got Questions, Call us 24/7 </li>
+                <li>Call us: +234-123456789 </li>
+                <li>Email us: <a href="mailto:info@travelsy.com">info@travelsy.com</a> </li>
+              </ul>
+            </div>
+
+            <div class="contact">
+              <h4>Contact info</h4>
+              <p>
+                2nd Floor, Fedha Plaza,Westlands, <br> Nairobi, Kenya.
+                <br>P.O Box 7231-00300 <br> Nairobi, Kenya
+              </p>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="comapany">
+              <h4>Comapany</h4>
+              <ul>
+                <li><a href="#"> About us </a></li>
+                <li><a href="#"> Careers </a></li>
+                <li><a href="#"> Terms of use </a></li>
+                <li><a href="#"> Privacy statement </a></li>
+                <li><a href="#"> Give us feedback </a></li>
+                <li><a href="#"> Partner with us </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="sevices">
+              <h4>Other sevices & support</h4>
+              <ul>
+                <li><a href="#"> Reward programs </a></li>
+                <li><a href="#"> Partners </a></li>
+                <li><a href="#"> Legal </a></li>
+                <li><a href="#"> Privacy policy </a></li>
+                <li><a href="#"> Customer service help </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="links">
+              <h4>Quick links</h4>
+              <ul>
+                <li><a href="#"> Your account </a></li>
+                <li><a href="#"> Camping locations </a></li>
+                <li><a href="#"> Activities</a></li>
+                <li><a href="#"> Hire equipments </a></li>
+                <li><a href="#"> Blog </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="subscribe">
+              <h4>Mailing lists</h4>
+              <p>Sign Up for our mailing lists and get the latest
+                offers and promotions straight in your inbox.</p>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    <div class="footer-middle">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Travelsy</h3>
+          </div>
+          <div class="col-md-9 footer-middle-wrapper">
+            <div class="payment-menthod">
+              <ul>
+                <li><a href="#"><img src="assets/brand/payment/mipesa.png"></a></li>
+                <li><a href="#"><img src="assets/brand/payment/discover.png"></a></li>
+                <li><a href="#"><img src="assets/brand/payment/visa.png"></a></li>
+                <li><a href="#"><img src="assets/brand/payment/paypal.png"></a></li>
+                <li><a href="#"><img src="assets/brand/payment/mastercard.png"></a></li>
+              </ul>
+            </div>
+            <div class="location">
+              <ul>
+                <li>
+                  <div class="dropdown">
+                  <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200630132504/uflag.jpg" alt="flag" class="rounded-circle"> United state of America
+                  </a>
+                    <ul class="dropdown-menu text-small">
+                      <li><a class="dropdown-item" href="#">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200630132500/bflag.jpg"
+                        > Brazil</a></li>
+
+                      <li><a class="dropdown-item" href="#"><img src=
+                        "https://media.geeksforgeeks.org/wp-content/uploads/20200630132502/eflag.jpg"> England</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="dropdown">
+                  <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD
+                  </a>
+                    <ul class="dropdown-menu text-small">
+                      <li><a class="dropdown-item" href="#"> NGN</a></li>
+
+                      <li><a class="dropdown-item" href="#"> EUR</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom"> 
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright">
+              <p>Copyright <span id="year"></span> Travelsy Ltd. All right reserved</p>
+            </div>
+
+            <div class="author">
+              <p>Made in Kenya by Ralak</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </footer>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="assets/dist/js/custom.js"></script>   
+  </body>
+</html>
